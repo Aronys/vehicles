@@ -44,10 +44,10 @@ namespace Vehicles.API.Data.Entities
         [Display(Name = "Foto")]
         public string ImageFullPath => LoginType == LoginType.Email
             ? ImageId == Guid.Empty
-                ? $"https://vehicleszulu.azurewebsites.net/images/noimage.png"
-                : $"https://vehicleszulu.blob.core.windows.net/users/{ImageId}"
+                ? $"https://localhost:44345//images/noimage.png"
+                : $"https://vehiclesaronys.blob.core.windows.net/users/{ImageId}"
             : string.IsNullOrEmpty(SocialImageURL)
-                ? $"https://vehicleszulu.azurewebsites.net/images/noimage.png"
+                ? $"https://localhost:44345//images/noimage.png"
                 : SocialImageURL;
 
         [Display(Name = "Foto")]

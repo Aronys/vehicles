@@ -17,7 +17,7 @@ namespace Vehicles.API.Data.Entities
 
         [Display(Name = "Foto")]
         public string ImageFullPath => ImageId == Guid.Empty
-            ? $"https://vehicleszulu.azurewebsites.net/images/noimage.png"
-            : $"https://vehicleszulu.blob.core.windows.net/vehiclephotos/{ImageId}";
+            ? $"https://localhost:44345//images/noimage.png"
+            : $"https://vehiclesaronys.blob.core.windows.net/vehiclephotos/{ImageId}";
     }
 }
