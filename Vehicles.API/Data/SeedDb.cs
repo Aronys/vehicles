@@ -17,7 +17,7 @@ namespace Vehicles.API.Data
             _context = context;
             _userHelper = userHelper;
         }
-
+                
         public async Task SeedAsync()
         {
             await _context.Database.EnsureCreatedAsync();
